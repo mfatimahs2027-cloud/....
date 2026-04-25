@@ -55,9 +55,10 @@ body {
   background: #7a69a0;
 }
 
-/* NAV */
+/* NAV (GLASS EFFECT) */
 nav {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
   max-width: 850px;
   margin: -25px auto 40px;
   padding: 14px;
@@ -95,7 +96,7 @@ section {
   animation: fadeUp 1s ease forwards;
 }
 
-/* FIXED: animation applies properly */
+/* ANIMATION FIX */
 section:nth-of-type(1) { animation-delay: 0.2s; }
 section:nth-of-type(2) { animation-delay: 0.4s; }
 section:nth-of-type(3) { animation-delay: 0.6s; }
@@ -132,9 +133,10 @@ h2 {
   gap: 20px;
 }
 
-/* IMAGE CARD */
+/* IMAGE CARD (TRANSPARENT) */
 .img-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
   border-radius: 20px;
   overflow: hidden;
 
@@ -166,24 +168,25 @@ h2 {
   font-family: Arial, sans-serif;
   font-size: 14px;
   text-align: center;
+  background: rgba(255,255,255,0.6);
 }
 
-/* INFO GRID FIX */
+/* INFO GRID (TRANSPARENT) */
 .info-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-/* FIX: support both divs and p tags */
 .info-grid div,
 .info-grid p {
-  background: white;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
   padding: 15px;
   border-radius: 15px;
 }
 
-/* TABLE (YOU ADDED THIS EARLIER) */
+/* TABLE */
 .budget-table {
   width: 100%;
   border-collapse: collapse;
@@ -198,7 +201,7 @@ h2 {
 }
 
 .budget-table th {
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.6);
 }
 
 /* FOOTER */
